@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BooksWagon | Non-Fiction Category</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9; /* Light background to match the homepage */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc); /* Beautiful gradient header */
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid #f1f1f1;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .book-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .book-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .book-card img {
+            height: 300px;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .book-card .card-body {
+            padding: 20px;
+            background: #fff;
+            text-align: center;
+            color: #555;
+            position: relative;
+        }
+
+        .book-card .card-body h5 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #007bff;
+            margin: 15px 0;
+        }
+
+        .book-card .card-body p {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #888;
+            margin-bottom: 15px;
+        }
+
+        .card-footer {
+            background: #007bff;
+            border-radius: 0 0 15px 15px;
+            color: white;
+        }
+
+        .btn-primary {
+            background: #007bff;
+            border: none;
+            padding: 10px 25px;
+            font-size: 1.1rem;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background: #343a40;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .section-heading {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 50px;
+            color: #007bff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* Card hover effect */
+        .book-card:hover img {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 767px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Non-Fiction Category</h1>
+        <p>Explore insightful and thought-provoking non-fiction books!</p>
+    </header>
+
+    <!-- Highlights Section -->
+    <section class="container my-5">
+        <h2 class="section-heading">Non-Fiction Highlights</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card shadow-lg book-card">
+                    <img src="educated.jpg" alt="Book Cover" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Educated</h5>
+                        <p class="card-text">By Tara Westover</p>
+                        <p class="text-muted">A memoir of a woman who grows up in a strict and isolated family.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-lg book-card">
+                    <img src="immortal.jpg" alt="Book Cover" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">The Immortal Life of Henrietta Lacks</h5>
+                        <p class="card-text">By Rebecca Skloot</p>
+                        <p class="text-muted">The remarkable story of Henrietta Lacks' cells and their impact on science.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Non-Fiction Books Section -->
+    <section class="container my-5">
+        <h2 class="section-heading">Popular Non-Fiction Books</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card shadow-lg book-card">
+                    <img src="becoming.jpeg" alt="Book Cover" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Becoming</h5>
+                        <p class="card-text">By Michelle Obama</p>
+                        <p class="text-muted">The historical account and biography of former First Lady, Michelle Obama.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow-lg book-card">
+                    <img src="wright.jpeg" alt="Book Cover" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">The Wright Brothers</h5>
+                        <p class="card-text">By David McCullough</p>
+                        <p class="text-muted">The incredible story of the Wright brothers and their achievement in aviation.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow-lg book-card">
+                    <img src="outliers.jpg" alt="Book Cover" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Outliers</h5>
+                        <p class="card-text">By Malcolm Gladwell</p>
+                        <p class="text-muted">A deep dive into what makes successful people different from others.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow-lg book-card">
+                    <img src="sapiens.jpeg" alt="Book Cover" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Sapiens: A Brief History of Humankind</h5>
+                        <p class="card-text">By Yuval Noah Harari</p>
+                        <p class="text-muted">A captivating account of the history of humankind.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 BooksWagon | Non-Fiction Category</p>
+        <p><a href="home.html">Back to Home</a></p>
+    </footer>
+
+</body>
+</html>
